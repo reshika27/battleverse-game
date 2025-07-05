@@ -1,0 +1,19 @@
+battleverse/
+├── contracts/               # Smart contracts
+│   ├── BattleVerse.sol      # Main game contract
+│   ├── CharacterNFT.sol     # NFT characters
+│   └── ItemNFT.sol          # NFT items
+├── scripts/                 # Deployment scripts
+├── test/                    # Smart contract tests
+├── frontend/                # React frontend
+│   ├── public/
+│   ├── src/
+│   │   ├── components/      # React components
+│   │   ├── contexts/        # Blockchain context
+│   │   └── App.js           # Main app component
+├── .github/
+│   └── workflows/           # CI/CD workflows
+├── .gitignore               # Files to ignore
+├── hardhat.config.js        # Hardhat configuration
+├── package.json             # Root dependencies
+└── README.md                # Project documentation
