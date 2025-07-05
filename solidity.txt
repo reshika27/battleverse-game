@@ -1,0 +1,25 @@
+// contracts/BattleVerse.sol
+pragma solidity ^0.8.19;
+
+import "@openzeppelin/contracts/access/Ownable.sol";
+import "./CharacterNFT.sol";
+import "./ItemNFT.sol";
+
+contract BattleVerse is Ownable {
+    struct Match {
+        address[2] players;
+        uint256[][] grid;
+        bool active;
+    }
+    
+    mapping(uint256 => Match) public matches;
+    CharacterNFT public characterNFT;
+    ItemNFT public itemNFT;
+    
+    event MatchCreated(uint256 matchId);
+    
+    constructor(address _charNFT, address _itemNFT) {
+        characterNFT = CharacterNFT(_charNFT);
+        itemNFT = ItemNFT(_itemNFT);
+    }
+}
