@@ -31,7 +31,3 @@ BattleVerse is a decentralized multiplayer strategy game where all game logic, a
 - npm (Node Package Manager)
 - MetaMask or another Ethereum wallet
 
-### Clone the Repository
-```bash
-git clone https://github.com/YOURUSERNAME/battleverse.git
-cd battleverse
